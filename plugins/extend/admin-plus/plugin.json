@@ -1,0 +1,32 @@
+{
+    "$schema": "../../../system/schema/extend.json",
+    "name": "Admin Plus",
+    "description": "Improves the administration user interface.",
+    "authors": [
+        {"name": "Friends of Sunlight CMS", "url": "https://github.com/friends-of-sunlight-cms/"}
+    ],
+    "version": "1.0.0",
+    "environment": {
+        "system": "^8.1"
+    },
+    "config_defaults": {
+        "show_service_buttons": true
+    },
+    "actions": {
+        "config": "ConfigAction"
+    },
+    "langs": {
+        "admin-plus": "lang"
+    },
+    "events": [
+        {"event": "core.javascript", "script": "event/core_javascript.php", "group": "admin-plus"}
+    ],
+    "events.web": [],
+    "events.admin": [
+        {"event": "admin.body.start", "script": "event/admin_body_start.php"},
+        {"event": "admin.page.editscript", "script": "event/page_editscript.php", "priority": 99999},
+        {"event": "admin.mod.init", "script": "event/mod_init.php"},
+        {"event": "admin.head", "script": "event/head_assets.php", "group": "admin-plus"},
+        {"event": "admin.style", "script": "event/admin_style.php"}
+    ]
+}
