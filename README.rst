@@ -47,8 +47,8 @@ Edit-scripts improvements
 - Adds new function buttons to page editscripts
 
 Extend events
--------------
+^^^^^^^^^^^^^
 
-``admin-plus.submenu`` - args: module:string, &items:array
-``admin-plus.buttonbox.before`` - args: admin:AdminState, new:bool, &button:array, &output:string
-``admin-plus.buttonbox.after`` - args: admin:AdminState, &output:string
+- ``admin-plus.submenu`` - args: module:string, &items:array
+- ``admin-plus.buttonbox.before`` - args: admin:AdminState, new:bool, &button:array, &output:string
+- ``admin-plus.buttonbox.after`` - args: admin:AdminState, &output:string
