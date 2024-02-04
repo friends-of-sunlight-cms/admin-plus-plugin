@@ -37,6 +37,7 @@ Admin layout
 System settings
 ^^^^^^^^^^^^^^^
 - Add highlighting (outline) of the selected system setting
+- Add a button for configuration if the template supports it
 
 Plugins list
 ^^^^^^^^^^^^

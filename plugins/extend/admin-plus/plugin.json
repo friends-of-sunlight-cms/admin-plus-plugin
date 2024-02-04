@@ -19,7 +19,8 @@
         "admin-plus": "lang"
     },
     "events": [
-        {"event": "core.javascript", "script": "event/core_javascript.php", "group": "admin-plus"}
+        {"event": "core.javascript", "script": "event/core_javascript.php", "group": "admin-plus"},
+        {"event": "form.select.after", "script": "event/form_select_after.php"}
     ],
     "events.web": [],
     "events.admin": [
