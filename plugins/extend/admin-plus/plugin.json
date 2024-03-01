@@ -19,8 +19,7 @@
         "admin-plus": "lang"
     },
     "events": [
-        {"event": "core.javascript", "script": "event/core_javascript.php", "group": "admin-plus"},
-        {"event": "form.select.after", "script": "event/form_select_after.php"}
+        {"event": "core.javascript", "script": "event/core_javascript.php", "group": "admin-plus"}
     ],
     "events.web": [],
     "events.admin": [
@@ -28,6 +27,7 @@
         {"event": "admin.page.editscript", "script": "event/page_editscript.php", "priority": 99999},
         {"event": "admin.mod.init", "script": "event/mod_init.php"},
         {"event": "admin.head", "script": "event/head_assets.php", "group": "admin-plus"},
-        {"event": "admin.style", "script": "event/admin_style.php"}
+        {"event": "admin.style", "script": "event/admin_style.php"},
+        {"event": "form.select.after", "script": "event/form_select_after.php"}
     ]
 }
